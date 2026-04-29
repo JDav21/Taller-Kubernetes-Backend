@@ -1,0 +1,13 @@
+use Taller_Kubernetes_2026
+
+CREATE TABLE libro(
+    idLibro INT IDENTITY(1,1) PRIMARY KEY,
+    titulo VARCHAR(100),
+    autor VARCHAR(100)
+);
+
+INSERT INTO libro(titulo,autor)
+VALUES ('Clean Code','Robert Martin'),
+       ('Spring Boot','Josh Long');
+
+SELECT * FROM libro;
